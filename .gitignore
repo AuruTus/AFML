@@ -3,4 +3,4 @@
 .python-version
 
 # Generated sample data (regenerate via scripts/download_binance_tick.py)
-Sample_data/
+sample-data/
