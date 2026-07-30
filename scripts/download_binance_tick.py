@@ -105,7 +105,7 @@ if __name__ == "__main__":
     print("正在生成 Dollar Bars...")
     df_db = generate_standard_bars(df_ticks, bar_type="dollar", threshold=13_000_000.0)
 
-    # 3. 保存至 ./Sample_data/ 目录下对应的 .txt 文件
+    # 3. 保存至 ./sample-data/ 目录下对应的 .txt 文件
     tb_path = os.path.join(OUTPUT_DIR, "tick_bars.txt")
     vb_path = os.path.join(OUTPUT_DIR, "volume_bars.txt")
     db_path = os.path.join(OUTPUT_DIR, "dollar_bars.txt")
