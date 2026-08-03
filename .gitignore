@@ -4,3 +4,6 @@
 
 # Generated sample data (regenerate via scripts/download_binance_tick.py)
 sample-data/
+
+# Generated figures (regenerate via scripts/compare_log_vs_abs.py)
+scripts/output/
