@@ -34,7 +34,8 @@ def main():
     dollar.index = dollar.index.as_unit("ns")
 
     d_vol = rs.vol(dollar["close"], span0=50)
-    events = rs.cs_filter(dollar["close"], limit=d_vol.mean())
+    # d_vol is a return; cs_filter diffs are price points, so scale by price level
+    events = rs.cs_filter(dollar["close"], limit=d_vol.mean() * dollar["close"].mean())
     vb = rs.vert_barrier(data=dollar["close"], events=events, period="days", freq=1)
     print(f"data rows={dollar.shape[0]}  events={events.shape[0]}  vb={vb.shape[0]}")
 
