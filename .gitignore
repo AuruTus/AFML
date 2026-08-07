@@ -7,3 +7,7 @@ sample-data/
 
 # Generated figures (regenerate via scripts/compare_log_vs_abs.py)
 scripts/output/
+
+# Python bytecode cache
+__pycache__/
+*.pyc
